@@ -682,7 +682,9 @@ export default function Home() {
                     <p className="text-gray-600 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6">"{testimonial.quote}"</p>
+                <p className="text-gray-700 mb-6">
+                  &quot;{testimonial.quote}&quot;
+                </p>
                 <div className="flex gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <IoStar key={i} className="text-[#F86808] w-5 h-5" />
