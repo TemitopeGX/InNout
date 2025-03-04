@@ -138,7 +138,7 @@ export default function FAQ() {
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-gray-600">
-              Find answers to common questions about InNout's services and
+              Find answers to common questions about InNout&apos;s services and
               features.
             </p>
           </div>

@@ -2,28 +2,15 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FiPackage, FiDownload, FiMapPin, FiCheck } from "react-icons/fi";
 import {
-  FiTruck,
-  FiShoppingBag,
-  FiPackage,
-  FiDownload,
-  FiMapPin,
-  FiSearch,
-  FiCheck,
-} from "react-icons/fi";
-import {
-  IoFastFoodOutline,
   IoRestaurantOutline,
   IoBasketOutline,
   IoStarOutline,
   IoTimeOutline,
   IoStar,
 } from "react-icons/io5";
-import {
-  MdOutlineLocalOffer,
-  MdOutlineSupportAgent,
-  MdOutlineDeliveryDining,
-} from "react-icons/md";
+import { MdOutlineLocalOffer, MdOutlineDeliveryDining } from "react-icons/md";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {

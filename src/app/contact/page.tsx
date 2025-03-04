@@ -15,8 +15,9 @@ export default function Contact() {
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Get in touch with us for any questions or concerns. We're here to
-              help!
+              Get in touch with us for any questions or concerns. We&apos;re
+              here to help with all your food delivery and grocery shopping
+              needs.
             </p>
           </div>
         </div>

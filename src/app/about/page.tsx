@@ -12,8 +12,8 @@ export default function About() {
             </h1>
             <p className="text-xl text-gray-600">
               InNout was founded with a vision to transform how Nigerians access
-              food and groceries. We're building the future of food delivery and
-              shopping in Nigeria.
+              food and groceries. We&apos;re building the future of food
+              delivery and shopping in Nigeria.
             </p>
           </div>
         </div>
@@ -27,35 +27,32 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Our Mission
               </h2>
-              <p className="text-gray-600 mb-6">
-                At InNout, we're committed to making food ordering and grocery
-                shopping more accessible, convenient, and enjoyable for everyone
-                in Nigeria.
+              <p className="text-lg text-gray-600 mb-8">
+                We&apos;re on a mission to revolutionize food delivery and
+                grocery shopping in Nigeria. Through innovation and dedication,
+                we aim to provide convenient access to quality food and
+                essential items.
               </p>
-              <p className="text-gray-600 mb-6">
-                We believe in supporting local businesses and creating
-                opportunities for growth in our community. Our platform connects
-                customers with their favorite restaurants and provides fresh
-                groceries right to their doorstep.
-              </p>
-              <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">
-                    50K+
+              <div className="space-y-4">
+                {[
+                  "Delivering happiness through food",
+                  "Supporting local businesses",
+                  "Creating job opportunities",
+                  "Promoting food safety",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center gap-3 text-gray-700"
+                  >
+                    <div className="w-2 h-2 bg-[#F86808] rounded-full" />
+                    <span>{item}</span>
                   </div>
-                  <div className="text-gray-600">Happy Customers</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">
-                    1000+
-                  </div>
-                  <div className="text-gray-600">Local Vendors</div>
-                </div>
+                ))}
               </div>
             </div>
-            <div className="relative aspect-square rounded-2xl overflow-hidden">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="/about-mission.jpg"
+                src="/mission-image.jpg"
                 alt="Our Mission"
                 fill
                 className="object-cover"
@@ -82,7 +79,7 @@ export default function About() {
               {
                 title: "Customer Focus",
                 description:
-                  "Your satisfaction is our top priority. We're always here to help.",
+                  "Your satisfaction is our top priority. We&apos;re always here to help.",
                 icon: "❤️",
               },
               {
@@ -147,14 +144,14 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-orange-500">
+      <section className="py-20 bg-[#F86808]">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
             Join Us in Building the Future
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Be part of Nigeria's leading food and grocery platform. Download our
-            app today!
+            Be part of Nigeria&apos;s leading food and grocery platform.
+            Download our app today!
           </p>
           <div className="flex justify-center gap-6">
             <a
