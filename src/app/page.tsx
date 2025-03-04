@@ -140,7 +140,7 @@ export default function Home() {
               <div className="relative">
                 {/* App Screenshot */}
                 <Image
-                  src="/app-mockup.jfif"
+                  src="/app-mockup.png"
                   alt="InNout App"
                   width={400}
                   height={800}
