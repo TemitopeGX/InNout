@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     maximumScale: 1,
   },
   themeColor: "#F86808",
+  other: {
+    "apple-mobile-web-app-title": "InNout",
+  },
 };
 
 export default function RootLayout({
