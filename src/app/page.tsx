@@ -24,7 +24,7 @@ export default function Home() {
           {/* Main Background Image */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A1A] via-[#1A1A1A]/90 to-[#1A1A1A]">
             <Image
-              src="/hero-bg.jfif"
+              src="/hero-bg.jpg"
               alt="Food Background"
               fill
               className="object-cover opacity-50 mix-blend-overlay"
@@ -135,60 +135,17 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="hidden md:block w-full max-w-[280px] md:max-w-[300px] lg:max-w-[320px]"
+              className="hidden md:block w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px]"
             >
               <div className="relative">
                 {/* App Screenshot */}
                 <Image
                   src="/app-mockup.png"
                   alt="InNout App"
-                  width={400}
-                  height={800}
+                  width={800}
+                  height={1600}
                   className="relative z-10 w-full h-auto"
                 />
-                {/* Floating Elements */}
-                <div className="absolute top-1/4 -left-4 md:-left-8 w-12 md:w-20 h-12 md:h-20 bg-[#F86808] rounded-full blur-xl opacity-50 animate-float" />
-                <div className="absolute bottom-1/4 -right-4 md:-right-8 w-12 md:w-20 h-12 md:h-20 bg-[#00A651] rounded-full blur-xl opacity-50 animate-float-delayed" />
-                {/* Food Images */}
-                <motion.div
-                  animate={{
-                    y: [0, -10, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute -top-6 md:-top-12 -left-6 md:-left-12 w-16 md:w-32 h-16 md:h-32"
-                >
-                  <Image
-                    src="/jollof-rice.jfif"
-                    alt="Floating Jollof Rice"
-                    width={128}
-                    height={128}
-                    className="rounded-full shadow-lg w-full h-full object-cover"
-                  />
-                </motion.div>
-                <motion.div
-                  animate={{
-                    y: [0, 10, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1,
-                  }}
-                  className="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 w-14 md:w-28 h-14 md:h-28"
-                >
-                  <Image
-                    src="/egusi-soup.jfif"
-                    alt="Floating Egusi Soup"
-                    width={112}
-                    height={112}
-                    className="rounded-full shadow-lg w-full h-full object-cover"
-                  />
-                </motion.div>
               </div>
             </motion.div>
           </div>
@@ -274,21 +231,21 @@ export default function Home() {
             {[
               {
                 name: "Food Delivery",
-                image: "/delivery-service.jfif",
+                image: "/delivery-service.jpg",
                 icon: <IoRestaurantOutline className="w-5 h-5 md:w-6 md:h-6" />,
                 description:
                   "Swift delivery of your favorite Nigerian dishes from top restaurants",
               },
               {
                 name: "Supermarket",
-                image: "/supermarket.jfif",
+                image: "/supermarket.jpg",
                 icon: <IoBasketOutline className="w-5 h-5 md:w-6 md:h-6" />,
                 description:
                   "Fresh groceries, household essentials, and more with same-day delivery",
               },
               {
                 name: "Bulk Orders",
-                image: "/bulk-orders.jfif",
+                image: "/bulk-orders.jpg",
                 icon: <FiPackage className="w-5 h-5 md:w-6 md:h-6" />,
                 description: "Special handling for large orders and events",
               },
@@ -343,38 +300,38 @@ export default function Home() {
             {[
               {
                 name: "Jollof Rice Special",
-                image: "/jollof-rice.jfif",
+                image: "/jollof-rice.jpg",
                 description:
                   "Smoky party-style jollof rice with grilled chicken",
                 price: "₦3,500",
               },
               {
                 name: "Egusi Soup",
-                image: "/egusi-soup.jfif",
+                image: "/egusi-soup.jpg",
                 description: "Rich melon soup with assorted meat",
                 price: "₦4,000",
               },
               {
                 name: "Suya Platter",
-                image: "/suya-platter.jfif",
+                image: "/suya-platter.jpg",
                 description: "Spicy grilled beef with yaji spice",
                 price: "₦5,500",
               },
               {
                 name: "Pounded Yam & Soup",
-                image: "/pounded-yam.jfif",
+                image: "/pounded-yam.jpg",
                 description: "Smooth pounded yam with choice of soup",
                 price: "₦4,500",
               },
               {
                 name: "Fried Rice Special",
-                image: "/fried-rice.jfif",
+                image: "/fried-rice.jpg",
                 description: "Nigerian-style fried rice with proteins",
                 price: "₦3,800",
               },
               {
                 name: "Pepper Soup",
-                image: "/pepper-soup.jfif",
+                image: "/pepper-soup.jpg",
                 description: "Spicy catfish pepper soup",
                 price: "₦4,200",
               },
@@ -510,7 +467,7 @@ export default function Home() {
               {
                 name: "Egusi Soup Special",
                 price: "₦4,500",
-                image: "/egusi-special.jfif",
+                image: "/egusi-special.jpg",
                 description: "Rich melon soup with assorted meat and seafood",
                 category: "Soups & Stews",
                 rating: 4.9,
@@ -519,7 +476,7 @@ export default function Home() {
               {
                 name: "Special Jollof Rice",
                 price: "₦3,500",
-                image: "/special-jollof.jfif",
+                image: "/special-jollof.jpg",
                 description:
                   "Smoky party-style jollof rice with grilled chicken",
                 category: "Rice Dishes",
@@ -529,7 +486,7 @@ export default function Home() {
               {
                 name: "Chinese Fried Rice",
                 price: "₦3,800",
-                image: "/chinese-rice.jfif",
+                image: "/chinese-rice.jpg",
                 description: "Special fried rice with shrimps and chicken",
                 category: "Rice Dishes",
                 rating: 4.7,
@@ -538,7 +495,7 @@ export default function Home() {
               {
                 name: "Assorted Meat Pepper Soup",
                 price: "₦5,000",
-                image: "/pepper-soup.jfif",
+                image: "/pepper-soup.jpg",
                 description: "Spicy pepper soup with assorted meat cuts",
                 category: "Soups & Stews",
                 rating: 4.9,
@@ -547,7 +504,7 @@ export default function Home() {
               {
                 name: "Ofada Rice & Sauce",
                 price: "₦4,000",
-                image: "/ofada-rice.jfif",
+                image: "/ofada-rice.jpg",
                 description: "Local rice served with special ofada sauce",
                 category: "Rice Dishes",
                 rating: 4.8,
@@ -556,7 +513,7 @@ export default function Home() {
               {
                 name: "Seafood Okra",
                 price: "₦6,000",
-                image: "/seafood-okra.jfif",
+                image: "/seafood-okra.jpg",
                 description: "Fresh okra soup with assorted seafood",
                 category: "Soups & Stews",
                 rating: 4.9,
@@ -637,7 +594,7 @@ export default function Home() {
               {
                 name: "Chioma Adebayo",
                 role: "Food Enthusiast",
-                image: "/testimonial-3.jfif",
+                image: "/testimonial-3.jpg",
                 quote:
                   "The best Nigerian food delivery service I've used. Their jollof rice is absolutely authentic!",
                 rating: 5,
@@ -766,7 +723,7 @@ export default function Home() {
             </div>
             <div className="relative mt-8 md:mt-0">
               <Image
-                src="/app-mockup.jfif"
+                src="/app-mockup.png"
                 alt="Mobile App"
                 width={500}
                 height={600}

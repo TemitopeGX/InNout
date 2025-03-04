@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/logo-white.png"
+                src="/logo.png"
                 alt="InNout Logo"
                 width={140}
                 height={50}
