@@ -26,7 +26,7 @@ export default function Services() {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="relative aspect-video">
                 <Image
-                  src="/food-ordering.jpg"
+                  src="/delivery-service.jpg"
                   alt="Food Ordering"
                   fill
                   className="object-cover"
@@ -223,7 +223,7 @@ export default function Services() {
               className="group hover:opacity-80 transition-all duration-300"
             >
               <Image
-                src="/app-store.png"
+                src="/app-store-badge.png"
                 alt="App Store"
                 width={160}
                 height={48}
@@ -235,7 +235,7 @@ export default function Services() {
               className="group hover:opacity-80 transition-all duration-300"
             >
               <Image
-                src="/play-store.png"
+                src="/google-play-badge.png"
                 alt="Play Store"
                 width={160}
                 height={48}

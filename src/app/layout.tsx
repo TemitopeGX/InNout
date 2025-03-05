@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -7,10 +7,18 @@ import CookieConsent from "@/components/CookieConsent";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#F86808",
+};
+
 export const metadata: Metadata = {
   title: "InNout - Food Delivery & Supermarket",
   description:
     "Your one-stop solution for food delivery and grocery shopping in Osogbo. Order delicious meals and groceries online for quick delivery.",
+  metadataBase: new URL("https://innout.com"),
   keywords: [
     "food delivery",
     "grocery delivery",
@@ -49,13 +57,6 @@ export const metadata: Metadata = {
     icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
     apple: [{ url: "/apple-icon.png" }],
   },
-  manifest: "/manifest.json",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  themeColor: "#F86808",
   other: {
     "apple-mobile-web-app-title": "InNout",
   },

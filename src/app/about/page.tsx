@@ -52,7 +52,7 @@ export default function About() {
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="/mission-image.jpg"
+                src="/about-image.png"
                 alt="Our Mission"
                 fill
                 className="object-cover"
@@ -79,7 +79,7 @@ export default function About() {
               {
                 title: "Customer Focus",
                 description:
-                  "Your satisfaction is our top priority. We&apos;re always here to help.",
+                  "Your satisfaction is our top priority. We are always here to help.",
                 icon: "❤️",
               },
               {
@@ -102,47 +102,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-            Our Team
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Oluwaseun Adebayo",
-                role: "CEO & Founder",
-                image: "/team1.jpg",
-              },
-              {
-                name: "Chioma Okonkwo",
-                role: "Head of Operations",
-                image: "/team2.jpg",
-              },
-              {
-                name: "Aisha Mohammed",
-                role: "Head of Technology",
-                image: "/team3.jpg",
-              },
-            ].map((member, index) => (
-              <div key={index} className="text-center">
-                <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20 bg-[#F86808]">
         <div className="max-w-7xl mx-auto px-4 text-center">
@@ -159,7 +118,7 @@ export default function About() {
               className="group hover:opacity-80 transition-all duration-300"
             >
               <Image
-                src="/app-store.png"
+                src="/app-store-badge.png"
                 alt="App Store"
                 width={160}
                 height={48}
@@ -171,7 +130,7 @@ export default function About() {
               className="group hover:opacity-80 transition-all duration-300"
             >
               <Image
-                src="/play-store.png"
+                src="/google-play-badge.png"
                 alt="Play Store"
                 width={160}
                 height={48}

@@ -99,17 +99,25 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <FiMapPin className="w-5 h-5 text-[#F86808]" />
                 <span className="text-gray-300">
-                  123 Main Street, Osogbo, Nigeria
+                  Joy Filling Sation, Alabameta, Ota Efun Osogbo, Nigeria
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <FiPhone className="w-5 h-5 text-[#F86808]" />
-                <a
-                  href="tel:+2348012345678"
-                  className="text-gray-300 hover:text-[#F86808] transition-colors"
-                >
-                  +234 801 234 5678
-                </a>
+                <div className="flex flex-col">
+                  <a
+                    href="tel:+2349053249574"
+                    className="text-gray-300 hover:text-[#F86808] transition-colors"
+                  >
+                    +2349053249574
+                  </a>
+                  <a
+                    href="tel:+2348167738238"
+                    className="text-gray-300 hover:text-[#F86808] transition-colors"
+                  >
+                    +2348167738238
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <FiMail className="w-5 h-5 text-[#F86808]" />

@@ -61,8 +61,8 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Address</h3>
                       <p className="text-gray-600">
-                        In N Out Supermarket, <br />
-                        Osogbo, Osun State, Nigeria
+                        Joy Filling Sation, <br /> Alabameta, Ota Efun Osogbo,
+                        Nigeria
                       </p>
                     </div>
                   </div>
