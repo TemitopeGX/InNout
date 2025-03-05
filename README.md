@@ -1,18 +1,29 @@
-# InNout - Food Delivery & Supermarket Landing Page
+# InNout - Pre-Launch Landing Page
 
 ![InNout Logo](/public/logo.png)
 
-A modern, responsive landing page for InNout, a food delivery and supermarket service built with Next.js 13+, TypeScript, and Tailwind CSS.
+A modern, responsive pre-launch landing page for InNout's upcoming food delivery and supermarket mobile application. This website serves as a promotional platform to create buzz and gather interest before the official app launch. Built with Next.js 13+, TypeScript, and Tailwind CSS.
+
+## 🎯 Purpose
+
+This landing page is designed to:
+
+- Showcase the upcoming InNout mobile app's features
+- Build anticipation for the app launch
+- Collect early user interest
+- Present InNout's brand identity and value proposition
+- Provide easy access to company information and support channels
 
 ## 🌟 Features
 
+- **Pre-launch Optimized**: Designed to generate excitement for the upcoming app
 - **Modern Design**: Clean and professional UI with smooth animations
 - **Fully Responsive**: Works perfectly on all devices (mobile, tablet, desktop)
+- **App Showcase**: Beautiful mobile app preview sections
 - **Performance Optimized**: Built with Next.js 13+ for optimal performance
 - **SEO Ready**: Implements SEO best practices with Next.js metadata
 - **Progressive Web App**: Includes PWA configuration
 - **Accessibility**: WCAG compliant with proper ARIA labels
-- **Dark Mode Support**: Elegant dark mode implementation
 - **Animation**: Smooth animations using Framer Motion
 - **Type Safety**: Built with TypeScript for better development experience
 
@@ -35,7 +46,7 @@ A modern, responsive landing page for InNout, a food delivery and supermarket se
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/food-landingpage.git
+git clone https://github.com/TemitopeGX/food-landingpage.git
 ```
 
 2. Navigate to the project directory:
@@ -86,64 +97,27 @@ food-landingpage/
 └── README.md         # Project documentation
 ```
 
-## 🎨 Key Components
+## 🎨 Key Sections
 
-- **Navbar**: Responsive navigation with mobile menu
-- **Hero Section**: Engaging hero section with CTA buttons
-- **Services**: Showcase of delivery services
-- **Menu Gallery**: Food items display with hover effects
-- **Testimonials**: Customer reviews section
-- **Footer**: Comprehensive footer with contact information
-- **Cookie Consent**: GDPR compliant cookie consent
-- **Contact Form**: Interactive contact form
+- **Hero Section**: Engaging introduction with app preview
+- **Features Showcase**: Highlights of the upcoming app's features
+- **Services**: Overview of food delivery and supermarket services
+- **Menu Preview**: Gallery of available food items
+- **Testimonials**: Early user and partner testimonials
+- **App Download**: Easy access to app store links (coming soon)
+- **Contact**: Comprehensive contact information
+- **Newsletter**: Sign up for launch updates
 
-## 🔧 Configuration
+## 🔜 Coming Soon
 
-### Metadata
+The InNout mobile app will feature:
 
-Update the metadata in `src/app/layout.tsx` for SEO:
-
-```typescript
-export const metadata: Metadata = {
-  title: "Your Title",
-  description: "Your Description",
-  // ... other metadata
-};
-```
-
-### Styling
-
-Tailwind CSS configuration can be modified in `tailwind.config.js`:
-
-```javascript
-module.exports = {
-  // ... your custom configuration
-};
-```
-
-## 📱 Progressive Web App
-
-The website is configured as a PWA. Update the PWA configuration in:
-
-- `public/manifest.json`
-- `public/service-worker.js`
-
-## 🚀 Deployment
-
-The project is optimized for deployment on Vercel:
-
-1. Push your code to GitHub
-2. Import the project in Vercel
-3. Configure environment variables
-4. Deploy!
-
-## 📄 Scripts
-
-- `npm run dev`: Start development server
-- `npm run build`: Build for production
-- `npm run start`: Start production server
-- `npm run lint`: Run ESLint
-- `npm run format`: Format code with Prettier
+- Real-time food delivery tracking
+- Extensive restaurant partnerships
+- Fresh grocery delivery
+- Secure payment options
+- Loyalty rewards program
+- 24/7 customer support
 
 ## 🤝 Contributing
 
@@ -157,9 +131,17 @@ The project is optimized for deployment on Vercel:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## 👥 Author
 
-- Your Name - [GitHub Profile](https://github.com/yourusername)
+- TemitopeGX - [GitHub Profile](https://github.com/TemitopeGX)
+
+## 📞 Contact & Support
+
+For inquiries about the upcoming app launch:
+
+- Email: hello@innout.com
+- Twitter: [@innout](https://twitter.com/innout)
+- Instagram: [@innout](https://instagram.com/innout)
 
 ## 🙏 Acknowledgments
 
@@ -167,19 +149,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Framer Motion Documentation](https://www.framer.com/motion/)
 
-## 📞 Support
+## 🔄 Future Updates
 
-For support, email support@innout.com or join our Slack channel.
+Stay tuned for:
 
-## 🔄 Updates
-
-Stay tuned for updates:
-
-- [ ] Add authentication
-- [ ] Implement online ordering
-- [ ] Add payment integration
-- [ ] Real-time order tracking
+- [ ] App launch announcement
+- [ ] Integration with mobile app
+- [ ] User dashboard
+- [ ] Online ordering system
+- [ ] Real-time delivery tracking
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Designed and Developed with ❤️ by [TemitopeGX](https://github.com/TemitopeGX)
