@@ -589,66 +589,151 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-            {[
-              {
-                name: "Chioma Adebayo",
-                role: "Food Enthusiast",
-                image: "/testimonial-3.jpg",
-                quote:
-                  "The best Nigerian food delivery service I've used. Their jollof rice is absolutely authentic!",
-                rating: 5,
-              },
-              {
-                name: "Oluwaseun Johnson",
-                role: "Business Owner",
-                image: "/testimonial-2.jpg",
-                quote:
-                  "Quick delivery and excellent food quality. The app makes ordering so convenient.",
-                rating: 5,
-              },
-              {
-                name: "Amina Ibrahim",
-                role: "Regular Customer",
-                image: "/testimonial-1.jpg",
-                quote:
-                  "Love their variety of traditional dishes. The customer service is top-notch!",
-                rating: 5,
-              },
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    width={60}
-                    height={60}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <h4 className="font-bold text-gray-900">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
+          <div className="relative">
+            <motion.div
+              className="flex gap-4 md:gap-8"
+              animate={{
+                x: ["0%", "-50%"],
+              }}
+              transition={{
+                x: {
+                  duration: 25,
+                  repeat: Infinity,
+                  ease: "linear",
+                },
+              }}
+            >
+              {[
+                {
+                  name: "Olayinka Adebayo",
+                  role: "Food Enthusiast",
+                  image: "/testimonial-3.jpg",
+                  quote:
+                    "The best Nigerian food delivery service I've used. Their jollof rice is absolutely authentic!",
+                  rating: 5,
+                },
+                {
+                  name: "Chukwudi Okonkwo",
+                  role: "Business Owner",
+                  image: "/testimonial-2.jpg",
+                  quote:
+                    "Quick delivery and excellent food quality. The app makes ordering so convenient.",
+                  rating: 5,
+                },
+                {
+                  name: "Aisha Ibrahim",
+                  role: "Regular Customer",
+                  image: "/testimonial-1.jpg",
+                  quote:
+                    "Love their variety of traditional dishes. The customer service is top-notch!",
+                  rating: 5,
+                },
+                {
+                  name: "Babajide Adeleke",
+                  role: "Tech Professional",
+                  image: "/testimonial-4.jpg",
+                  quote:
+                    "Fast delivery and great packaging. The app interface is user-friendly and efficient.",
+                  rating: 5,
+                },
+                {
+                  name: "Halima Musa",
+                  role: "Restaurant Owner",
+                  image: "/testimonial-5.jpg",
+                  quote:
+                    "As a partner restaurant, InNout has helped grow our business significantly.",
+                  rating: 5,
+                },
+                {
+                  name: "Ekaette Udoh",
+                  role: "Student",
+                  image: "/testimonial-6.jpg",
+                  quote:
+                    "Perfect for busy students! Affordable prices and quick delivery times.",
+                  rating: 5,
+                },
+                // Duplicate testimonials for seamless loop
+                {
+                  name: "Olayinka Adebayo",
+                  role: "Food Enthusiast",
+                  image: "/testimonial-3.jpg",
+                  quote:
+                    "The best Nigerian food delivery service I've used. Their jollof rice is absolutely authentic!",
+                  rating: 5,
+                },
+                {
+                  name: "Chukwudi Okonkwo",
+                  role: "Business Owner",
+                  image: "/testimonial-2.jpg",
+                  quote:
+                    "Quick delivery and excellent food quality. The app makes ordering so convenient.",
+                  rating: 5,
+                },
+                {
+                  name: "Aisha Ibrahim",
+                  role: "Regular Customer",
+                  image: "/testimonial-1.jpg",
+                  quote:
+                    "Love their variety of traditional dishes. The customer service is top-notch!",
+                  rating: 5,
+                },
+                {
+                  name: "Babajide Adeleke",
+                  role: "Tech Professional",
+                  image: "/testimonial-4.jpg",
+                  quote:
+                    "Fast delivery and great packaging. The app interface is user-friendly and efficient.",
+                  rating: 5,
+                },
+                {
+                  name: "Halima Musa",
+                  role: "Restaurant Owner",
+                  image: "/testimonial-5.jpg",
+                  quote:
+                    "As a partner restaurant, InNout has helped grow our business significantly.",
+                  rating: 5,
+                },
+                {
+                  name: "Ekaette Udoh",
+                  role: "Student",
+                  image: "/testimonial-6.jpg",
+                  quote:
+                    "Perfect for busy students! Affordable prices and quick delivery times.",
+                  rating: 5,
+                },
+              ].map((testimonial, index) => (
+                <motion.div
+                  key={index}
+                  className="flex-none w-full sm:w-[calc(50%-16px)] md:w-[calc(33.333%-22px)] bg-white rounded-2xl p-8 shadow-lg"
+                >
+                  <div className="flex items-center gap-4 mb-6">
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      width={60}
+                      height={60}
+                      className="rounded-full"
+                    />
+                    <div>
+                      <h4 className="font-bold text-gray-900">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-gray-600 text-sm">
+                        {testimonial.role}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <p className="text-gray-700 mb-6">
-                  &quot;{testimonial.quote}&quot;
-                </p>
-                <div className="flex gap-1">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <IoStar key={i} className="text-[#F86808] w-5 h-5" />
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+                  <p className="text-gray-700 mb-6">
+                    &quot;{testimonial.quote}&quot;
+                  </p>
+                  <div className="flex gap-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <IoStar key={i} className="text-[#F86808] w-5 h-5" />
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
