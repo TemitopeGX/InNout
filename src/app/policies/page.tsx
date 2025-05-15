@@ -87,8 +87,8 @@ export default function PoliciesPage() {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  By using InNout's services, you agree to these terms. Please
-                  read them carefully before using our platform.
+                  By using InNout&apos;s services, you agree to these terms.
+                  Please read them carefully before using our platform.
                 </p>
                 <h3 className="text-lg font-semibold text-gray-900">
                   User Responsibilities
@@ -208,7 +208,7 @@ export default function PoliciesPage() {
               Have Questions?
             </h2>
             <p className="text-gray-600 mb-6">
-              If you have any questions about our policies, please don't
+              If you have any questions about our policies, please don&apos;t
               hesitate to contact us.
             </p>
             <a
