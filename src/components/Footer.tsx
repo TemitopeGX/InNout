@@ -137,7 +137,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/policies"
+                  href="/privacy-policy"
                   className="text-gray-300 hover:text-[#F86808] transition-colors"
                 >
                   Privacy Policy
@@ -145,7 +145,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/policies#terms"
+                  href="/terms-of-service"
                   className="text-gray-300 hover:text-[#F86808] transition-colors"
                 >
                   Terms of Service
@@ -153,7 +153,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/policies#cookies"
+                  href="/cookie-policy"
                   className="text-gray-300 hover:text-[#F86808] transition-colors"
                 >
                   Cookie Policy
@@ -161,7 +161,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/policies#refund"
+                  href="/refund-policy"
                   className="text-gray-300 hover:text-[#F86808] transition-colors"
                 >
                   Refund Policy
